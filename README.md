@@ -1,19 +1,10 @@
 # EmailChecker
-A simple CSV email verifier that checks if an email exists. 
+A simple CSV email verifier that validates an email with regex. 
 
-### Version
-1.0.0
+This script runs offline, it doesn't check the email with SMTP or any web service.
 
-### Installation
-
-You need to install pip in order to get the dependencies
-https://pip.pypa.io/en/stable/installing/
-
-Then install the dependencies :
-```sh
-$ pip install pyDNS
-$ pip install validate_email
-```
+### Why not validate_email?
+Had too many false positives for me.
 
 ### Usage
 
@@ -27,31 +18,7 @@ $ ./checkem.py yourfile.csv
 This will produce a yourfile_export.csv output with the result of the analysis !
 And your done !
 
-### Tech
-
-Email Checker uses the following  techs :
-
-* [Python] - the first basic language
-* [pip] - the best package library for Python
-* [pyDNS] - DNS queries for dummies 
-* [validate_email] - email validator library
-
-### Todo's
-
- - Better management of the export
- - MX domains check
-
 License
 ----
 
-WTFPL (Do What the Fuck You Want to Public License) 2004
-
-(Copyleft) 2015 - Alexandre Pereira
-
-
-**Free Software, Hell Yeah!**
-
-[Python]:https://www.python.org
-[pip]:https://pip.pypa.io/en/stable/
-[pyDNS]:http://pydns.sourceforge.net/
-[validate_email]:https://github.com/syrusakbary/validate_email
+MIT
